@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow-x: hidden; /*if you want to stop x-axis scrolling*/
+
+   
+    overflow-y: auto;
+    direction: ltr;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+  
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100px;
+}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 6px solid rgba(0, 0, 0, 0.18);
+    border-left: 0;
+    border-right: 0;
+    background-color: #555;;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center; 
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+#img{
+    float: left;
+    width: 65px;
+    height: 65px;
+}
+
+#homeImg{
+    /*background: url("gaming-newbies-stadia-superJumbo.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #cfcfcf;
+  }
+  #home .layer{
+    height: 750px;
+    background-attachment: fixed;
+    background: rgba(7, 2, 4, 0.77);
+  }
+  div #home {
+    text-align: center;
+    top: 50%;
+    font-size: 80px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover{
+    color: #DE5E60;
+  }
+  
+  .topnav button{
+    border: none;
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    background-color: rgba(51, 51, 51, 0);
+  }
+  
+  .topnav button:hover{
+    color: #DE5E60;
+  }
+  
+  .fa{
+    font-size:30px; 
+    color:white
+  }
+  .topnav .fa:hover{
+    color: #DE5E60 !important;
+  
+  }
+    /*.topnav li{
+      text-align: center;
+  
+    }*/
+    
+  
+    
+    .topnav .icon {
+      display: none;
+    }
+  
+    @media screen and (max-width: 800px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav button:not(:first-child) {display: none;}
+      .topnav a.icon{
+        float: right;
+        display: block;
+      }
+      .topnav button.icon{
+          float: right;
+          display: block;
+      }
+    }
+    
+    @media screen and (max-width: 800px) {
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive button{
+          float: none;
+          display: block;
+          text-align: left;
+      }
+    }
+    
+    .games h3{
+      color: white;
+      font-size: 30;
+    }
+
+    .main-photo {
+        display: inline-block;
+        width: 1942px;
+        height: 176px;
+        margin:auto;
+        vertical-align:middle;
+        position: relative;
+        left: 50px;
+        background: rgba(7, 2, 4, 0.77);
+    }
+
+    .ozellikler p{
+        font-size: large;
+        border-color: black;  
+        width: 50%;
+        height: 80%;
+        border-width: 5px;  
+        border-style: inset;  
+    }
+
+    .button {
+        position: relative;
+        background-color: #DE5E60;
+        border: none;
+        font-size: 28px;
+        color: #FFFFFF;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    button{
+        float: right;
+        top: 100px;
+    }
+
+    
+    

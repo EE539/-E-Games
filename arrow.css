@@ -1,0 +1,45 @@
+
+/*
+| SVG Nav Arrow Style
+*/
+/* https://gist.github.com/seeRead/11229083 */
+.games .prod-slider-container {
+  position: relative;
+  font-family: font-awesome;
+}
+.games .owl-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.games .owl-prev,
+.games .owl-next {
+  position: absolute;
+}
+.games i.fa {
+  cursor: pointer;
+  position: absolute;
+  font-size: 60px;
+  padding-top: 8px;
+  height: 64px;
+  width: 72px;
+  color: rgba(0, 0, 0, .5);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  display: table-cell;
+}
+.games .owl-prev, .owl-next {
+  background-color: transparent;
+  border: 0px none transparent;
+  width: 0px;
+  height: 0px;
+}
+.games .owl-perv {
+  left: 0;
+}
+.games .owl-next {
+  right: 72px;
+}
+.games .item {
+  outline: 3px dashed black;
+}

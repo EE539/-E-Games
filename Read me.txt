@@ -1,0 +1,55 @@
+The website I created is Turkish except game's names descriptions.
+To run the page, you need xampp and MySQL. 
+Also, you need to change the $vt_sifre = "sifre"; in to your password 
+(this command is in the baglanti.php, deleteGame.php, and sepet.php).
+
+For more questions and suggestions, you can reach me through this address: ecenazelverdi@gmail.com. 
+
+Note: In case dump is not working, here are the MySQL database codes:
+create table web_schema.oyunlar(
+	oid varchar(10),
+	oname varchar(100),
+	ofiyat INT,
+    opopularity INT,
+    oyapimici varchar(100),
+    otarih varchar(10),
+    oaciklama varchar(1000),
+	primary key(oid)
+);
+
+
+create table web_schema.users(
+	kaid varchar(10),
+    kmail varchar(40),
+    ksifre varchar(16),
+    primary key(kaid, kmail)
+);
+
+create table web_schema.kutuphane(
+	oid varchar(10),
+    oname varchar(100),
+    kaid varchar(10)
+);
+
+create table web_schema.sepet(
+	oid varchar(10),
+    kaid varchar(10),
+    oname varchar(100),
+	ofiyat varchar(10)
+);
+
+The GameDatabase is important. You need to turn it into csv then import into the "oyunlar" table.
+
+oyunlar = game
+kutuphane = library
+sepet = cart
+fiyat = price
+tarih = date
+yapimici = creator
+aciklama = description
+
+oid = game id
+kaid = user name id
+
+Probably turn the page to the English later...
+
